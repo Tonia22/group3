@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+.drinks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.items div {
+  margin: solid 1px;
+  margin-top: 20px;
+}
+
+.two {
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+
+#menu {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 50px 80px;
+}
+/* #one; */

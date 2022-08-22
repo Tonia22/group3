@@ -1,0 +1,155 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr;
+  background: black;
+}
+
+.logo img {
+  margin-left: 10%;
+}
+
+.logo {
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+
+.links {
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+.links a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.buttons {
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+.buttons button {
+  padding: 5px 10px 5px 10px;
+  color: whitesmoke;
+  background: red;
+  border-radius: 10px;
+}
+
+.tablet {
+  background: rgb(255, 255, 255);
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  bottom: 15%;
+  transform: translate(-50% -50%);
+  text-align: center;
+  padding: 5px;
+  z-index: 100;
+  border-radius: 20px;
+  display: none;
+}
+
+.tablet a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.menu {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 80vh;
+  text-align: center;
+  position: fixed;
+  display: none;
+  left: -300px;
+}
+
+.menu .items a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: whitesmoke;
+  margin-top: 10px;
+}
+
+#ord {
+  background: red;
+  padding: 5px 10px 5px 10px;
+  color: whitesmoke;
+  border-radius: 10px;
+  border: none;
+}
+
+.three {
+  display: none;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  transform: translate(-50% -50%);
+}
+.three div {
+  width: 35px;
+  height: 5px;
+  margin-top: 5px;
+  background: red;
+}
+
+@media screen and (max-width: 932px) {
+  .top {
+    background: black;
+    display: inline;
+    text-align: center;
+  }
+  .links {
+    display: none;
+  }
+  .buttons {
+    display: none;
+  }
+
+  .logo img {
+    width: 10%;
+    margin-left: -5%;
+    /* margin-left: -200px; */
+  }
+  .logo {
+    background: black;
+  }
+  .three {
+    display: none;
+  }
+  .tablet {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .menu {
+    display: initial;
+  }
+  .three {
+    display: initial;
+  }
+  .tablet {
+    display: none;
+  }
+} ;
